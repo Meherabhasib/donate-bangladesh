@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <!--google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Daisyui-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--custom tailwind-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",              
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .font {
+        font-family: "Lexend", sans-serif;
+      }
+
+    </style>
+  </head>
+  <body class="">
+    <header>
+      <nav class=" md:container md:mx-auto ">
+        <div class=" bg-orange-50 p-3 flex justify-around flex-col md:flex-row text-center">
+          <div class="flex items-center">
+            <button class=" text-lg px-4 py-2 rounded-lg bg-lime-300 font-bold   ">Blog</button>
+          </div>
+          <div class="flex items-center text-center">
+            <img src="assets/logo.png" alt="">
+            <h1 class="pl-2 font-bold text-lg">Donate Bangladesh</h1>
+          </div>
+          <div class="flex items-center text-center">
+            <img src="assets/coin.png" alt="">
+            <h2 class="font-medium text-gray-500">
+              <span class="px-2 font-medium">100000</span>BDT
+            </h2>
+          </div>
+        </div>
+        <div class="md:container md:mx-auto  pt-14 text-center ">
+          <button class="px-3 py-2 border border-slate-300 rounded-lg font-medium text-slate-600 mr-2 ">Donation</button>
+          <button class="px-4 py-2 border border-slate-300 rounded-lg font-medium text-slate-600">History</button>
+
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
