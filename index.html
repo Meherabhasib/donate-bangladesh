@@ -39,11 +39,11 @@
     </style>
   </head>
   <body class="">
-    <header>
+    <header class="sticky top-0 z-10 backdrop-blur-lg">
       <nav class="w-full  bg-orange-50  ">
         <div class=" mx-auto w-full md:w-5/6 p-3 flex justify-between flex-col md:flex-row items-center md:items-start">
           <div class="flex items-center">
-            <button class=" text-lg px-4 py-2 rounded-lg bg-lime-300 font-bold   ">Blog</button>
+            <button class=" text-lg px-4 py-2 rounded-lg bg-lime-300 font-bold   "><a href="faq.html">Blog</a></button>
           </div>
           <div class="flex items-center text-center">
             <img src="assets/logo.png" alt="">
@@ -59,8 +59,8 @@
       </nav>
       <section>
         <div class="md:container md:mx-auto  pt-14 text-center ">
-          <button class="px-3 py-2 border border-slate-300 rounded-lg font-medium text-slate-600 mr-2 ">Donation</button>
-          <button class="px-4 py-2 border border-slate-300 rounded-lg font-medium text-slate-600">History</button>
+          <button class=" text-slate-600 px-4 py-2  focus:bg-lime-300 border border-slate-300 rounded-lg font-medium  bg-slate-200 mr-2 ">Donation</button>
+          <button class=" px-4 py-2 focus:bg-lime-300  border border-slate-300 rounded-lg font-medium text-slate-600 bg-slate-200">History</button>
 
         </div>
       </section>
@@ -72,17 +72,18 @@
             <img class="h-full md:h-96 w-full"  src="assets/noakhali.png" alt="">
           </div>
           <div class="w-full md:w-1/2 mt-3">
-            <div class="flex items-center text-center px-4 py-2 bg-slate-100 w-5/12 md:w-3/12 rounded-lg mb-3">
-              <img src="assets/coin.png" alt="">
-              <h2 class="font-medium text-gray-500">
-                <span class="px-2 font-medium">100</span>BDT
-              </h2>
+            <div class="py-3">
+              <button class="flex font-bold text-slate-700 bg-slate-200 px-4 py-2 rounded-lg">
+                <img class="pr-2" src="assets/coin.png" alt="" srcset="">
+                <p class="pr-3 ">0</p>
+                <p>BDT</p>
+              </button>
             </div>
             <h2 class="font-extrabold text-lg mb-4">Donate for Flood at Noakhali, Bangladesh</h2>
             <p class="text-sm w-full md:w-11/12 text-wrap "> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-           <div> <input class="w-full border border-gray-200 px-2 py-3 rounded-lg mt-4 w-9/10" type="text" placeholder="Write Donation Amount" name="" id=""></div>
-           <div>
-            <button class="w-full  px-2 py-3 rounded-lg mt-4 w-9/10 bg-lime-300 font-bold" type="submit">Donate Now</button>
+           <div> <input class="w-full border border-gray-200 px-2 py-3 rounded-lg mt-4 w-9/10" type="text" placeholder="Write Donation Amount" name="" id="" required></div>
+           <div class="mx-auto w-full md:w-5/12  items-center">
+            <button class="w-full   px-2 py-3 rounded-lg mt-4 w-9/10 bg-lime-300 font-bold" type="submit">Donate Now</button>
            </div>
 
           </div>
@@ -96,16 +97,17 @@
             <img class="h-full md:h-96 w-full"  src="assets/feni.png" alt="">
           </div>
           <div class="w-full md:w-1/2 mt-3">
-            <div class="flex items-center text-center px-4 py-2 bg-slate-100 w-5/12 md:w-3/12 rounded-lg mb-3">
-              <img src="assets/coin.png" alt="">
-              <h2 class="font-medium text-gray-500">
-                <span class="px-2 font-medium">100</span>BDT
-              </h2>
+            <div class="py-3">
+              <button class="flex font-bold text-slate-700 bg-slate-200 px-4 py-2 rounded-lg">
+                <img class="pr-2" src="assets/coin.png" alt="" srcset="">
+                <p class="pr-3 "> 0</p>
+                <p>BDT</p>
+              </button>
             </div>
             <h2 class="font-extrabold text-lg mb-4">Donate for Flood Relief in Feni,Bangladesh</h2>
             <p class="text-sm w-full md:w-11/12 text-wrap "> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-           <div> <input class="w-full border border-gray-200 px-2 py-3 rounded-lg mt-4 w-9/10" type="text" placeholder="Write Donation Amount" name="" id=""></div>
-           <div>
+           <div> <input class="w-full border border-gray-200 px-2 py-3 rounded-lg mt-4 w-9/10" type="text" placeholder="Write Donation Amount" name="" id="" required></div>
+           <div class="mx-auto w-full md:w-5/12  items-center">
             <button class="w-full  px-2 py-3 rounded-lg mt-4 w-9/10 bg-lime-300 font-bold" type="submit">Donate Now</button>
            </div>
 
@@ -120,16 +122,18 @@
             <img class="h-full md:h-96 w-full"  src="assets/quota-protest.png" alt="">
           </div>
           <div class="w-full md:w-1/2 mt-3">
-            <div class="flex items-center text-center px-4 py-2 bg-slate-100 w-5/12 md:w-3/12 rounded-lg mb-3">
-              <img src="assets/coin.png" alt="">
-              <h2 class="font-medium text-gray-500">
-                <span class="px-2 font-medium">100</span>BDT
-              </h2>
+            <div class="py-3">
+              <button class="flex font-bold text-slate-700 bg-slate-200 px-4 py-2 rounded-lg">
+                <img class="pr-2" src="assets/coin.png" alt="" srcset="">
+                <p class="pr-3 "> 0</p>
+                <p>BDT</p>
+              </button>
             </div>
+ 
             <h2 class="font-extrabold text-lg mb-4">Aid for Injured in the Quota Movement</h2>
             <p class="text-sm w-full md:w-11/12 text-wrap ">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time . Please consider making a donation to support these brave individuals in their time of need.</p>
-           <div> <input class="w-full border border-gray-200 px-2 py-3 rounded-lg mt-4 w-9/10" type="text" placeholder="Write Donation Amount" name="" id=""></div>
-           <div>
+           <div> <input class="w-full border border-gray-200 px-2 py-3 rounded-lg mt-4 w-9/10" type="number" placeholder="Write Donation Amount" name="" id="" required></div>
+           <div class="mx-auto w-full md:w-5/12  items-center">
             <button class="w-full  px-2 py-3 rounded-lg mt-4 w-9/10 bg-lime-300 font-bold" type="submit">Donate Now</button>
            </div>
 
@@ -139,6 +143,9 @@
         <div></div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="mt-15">
+      <div class=" bg-orange-50  py-14"></div>      
+    </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
