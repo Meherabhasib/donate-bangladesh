@@ -1,3 +1,4 @@
+
 document.getElementById('donet-btn-1').addEventListener('click', function(event){
     event.preventDefault();
 
@@ -19,12 +20,13 @@ document.getElementById('donet-btn-1').addEventListener('click', function(event)
     
 })
 
+
 document.getElementById('donet-btn-2').addEventListener('click', function(event){
     event.preventDefault();
 
     const addMoney = getInputFieldValueById('donet-amount-input-2')
   
-    const balance = getTextFieldValueById('new-balance-3')
+    const balance = getTextFieldValueById('new-balance-2')
     const totalMoney = getTextFieldValueById('total-amount')
     const totalNewBalance = totalMoney - addMoney;
     const newBalance = addMoney + balance;
