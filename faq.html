@@ -1,70 +1,116 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <!--google Font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
-          rel="stylesheet"
-        />
-        <!--Daisyui-->
-        <link
-          href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
-          rel="stylesheet"
-          type="text/css"
-        />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <!--custom tailwind-->
-        <script>
-          tailwind.config = {
-            theme: {
-              extend: {
-                colors: {
-                  clifford: "#da373d",              
-                },
-              },
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Daisyui-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--custom tailwind-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
             },
-          };
-        </script>
-    
-        <style>
-          .font {
-            font-family: "Lexend", sans-serif;
-          }
-    
-        </style>
-      </head>
-<body>
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .font {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
     <header class="sticky top-0 z-10 backdrop-blur-lg">
-        <nav class="w-full  bg-orange-50  ">
-          <div class=" mx-auto w-full md:w-5/6 p-3 flex justify-between flex-col md:flex-row items-center md:items-start">
-            <div class="flex items-center">
-              <button class=" text-lg px-4 py-2 rounded-lg bg-lime-300 font-bold   "><a href="faq.html">Blog</a></button>
-            </div>
-            <div class="flex items-center text-center">
-              <img src="assets/logo.png" alt="">
-              <h1 class="pl-2 font-bold text-lg">Donate Bangladesh</h1>
-            </div>
-            <div class="flex items-center text-center">
-              <img src="assets/coin.png" alt="">
-              <h2 class="font-medium text-gray-500">
-                <span class="px-2 font-medium">100000</span>BDT
-              </h2>
-            </div>
+      <nav class="w-full bg-orange-50">
+        <div
+          class="mx-auto w-full md:w-5/6 p-3 flex justify-between flex-col md:flex-row items-center md:items-start"
+        >
+          <div class="flex items-center">
+            <button class="text-lg px-4 py-2 rounded-lg bg-lime-300 font-bold">
+              <a href="faq.html">Blog</a>
+            </button>
           </div>
-        </nav>
-        <section>
-          <div class="md:container md:mx-auto  pt-14 text-center ">
-            <button class=" text-slate-600 px-4 py-2  focus:bg-lime-300 border border-slate-300 rounded-lg font-medium  bg-slate-200 mr-2 ">Donation</button>
-            <button class=" px-4 py-2 focus:bg-lime-300  border border-slate-300 rounded-lg font-medium text-slate-600 bg-slate-200">History</button>
-  
+          <div class="flex items-center text-center">
+            <img src="assets/logo.png" alt="" />
+            <h1 class="pl-2 font-bold text-lg">Donate Bangladesh</h1>
           </div>
-        </section>
-      </header>
-    
-</body>
+          <div class="flex items-center text-center">
+            <img src="assets/coin.png" alt="" />
+            <h2 class="font-medium text-gray-500">
+              <span class="px-2 font-medium">100000</span>BDT
+            </h2>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="w-5/6 mx-auto mt-4">
+        <h1>Importent FAQ <span></span></h1>
+      <div class="collapse collapse-arrow bg-base-100 mt-1">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          What Is The Document Object Model (DOM)
+        </div>
+        <div class="collapse-content">
+          <p>
+            "The Document Object Model (DOM) is a platform and language-neutral
+            interface that allows programs and scripts to dynamically access and
+            update the content, structure, and style of a document."
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 mt-1">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How do you select an element from the dom?
+        </div>
+        <div class="collapse-content">
+          <p>
+            getElementById – search element by element_id getElementsByTagName –
+            search element by tag name (e.g., span, div) getElementsByClassName
+            – search element by class name getElementsByName – search element by
+            name attribute querySelector – returns the first element that
+            matches the specified selector querySelectorAll – returns elements
+            that match the specified selector
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 mt-1">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          What is event delegation in the context of DOM,and why is it useful ?
+        </div>
+        <div class="collapse-content">
+          <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 mt-1">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How to you manipulate an elements attributes and styles using DOM ?
+        </div>
+        <div class="collapse-content">
+          <p>Manipulating Element Attributes
+            If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set. The value of the attribute to set.</p>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
