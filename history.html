@@ -17,6 +17,7 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="./index.html" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!--custom tailwind-->
     <script>
@@ -39,33 +40,60 @@
   </head>
   <body>
     <header class="sticky top-0 z-10 backdrop-blur-lg">
-        <nav class="w-full  bg-orange-50  ">
-          <div class=" mx-auto w-full md:w-5/6 p-3 flex justify-between flex-col md:flex-row items-center md:items-start">
-            <div class="flex items-center">
-              <button class=" text-lg px-4 py-2 rounded-lg bg-lime-300 font-bold   "><a href="faq.html">Blog</a></button>
-            </div>
-            <div class="flex items-center text-center">
-              <img src="assets/logo.png" alt="">
-              <h1 class="pl-2 font-bold text-lg">Donate Bangladesh</h1>
-            </div>
-            <div class="flex items-center text-center">
-              <img src="assets/coin.png" alt="">
-              <h2 class="font-medium text-gray-500">
-                <span id="total-amount" class="px-2 font-medium">100000</span>BDT
-              </h2>
-            </div>
+      <nav class="w-full bg-orange-50">
+        <div
+          class="mx-auto w-full md:w-5/6 p-3 flex justify-between flex-col md:flex-row items-center md:items-start"
+        >
+          <div class="flex items-center">
+            <a href="faq.html"
+              ><button
+                class="text-lg px-4 py-2 rounded-lg bg-lime-300 font-bold"
+              >
+                Blog
+              </button></a
+            >
           </div>
-        </nav>
-        <section>
-          <div class="md:container md:mx-auto  pt-14 text-center ">
-            <a href="./index.html">
-                <button class="  text-slate-700 hover:bg-slate-300  px-4 py-2  focus:bg-lime-300 border border-slate-300 rounded-lg font-medium  bg-slate-200 mr-2 ">Donation</button>
-            </a>
-            <button  class=" px-4 py-2 focus:bg-lime-300  border border-slate-300 rounded-lg font-medium  text-slate-700 hover:bg-slate-300 bg-slate-200"><a href="./history.html">History</a></button>
-  
+          <div class="flex items-center text-center">
+            <img src="assets/logo.png" alt="" />
+            <h1 class="pl-2 font-bold text-lg">Donate Bangladesh</h1>
           </div>
-        </section>
-      </header>
-    <main></main>
+          <div class="flex items-center text-center">
+            <img src="assets/coin.png" alt="" />
+            <h2 class="font-medium text-gray-500">
+              <span id="total-amount" class="px-2 font-medium">100000</span>BDT
+            </h2>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <div class="md:container md:mx-auto pt-14 text-center">
+          <a href="./index.html">
+            <button
+              id="donation-btn"
+              class="text-slate-700 px-4 py-2 focus:outline-none transition-colors duration-300 border border-slate-300 rounded-lg font-medium mr-2"
+            >
+              Donation
+            </button>
+          </a>
+
+          <a href="./history.html">
+            <button
+              id="history-btn"
+              class="text-slate-700 px-4 py-2 focus:outline-none transition-colors duration-300 border border-slate-300 rounded-lg font-medium bg-lime-300"
+            >
+              History
+            </button>
+          </a>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div >
+        <h1 id="history-donete-amount" class="w-11/12 md:w-5/6 mx-auto bg-slate-100 font-bold text-lg pb-4 "></h1>
+        <p id="history-donate-dtls" class="w-11/12 md:w-5/6 mx-auto bg-slate-200 font-medium text-sm "></p>
+      </div>
+    </main>
+    <script src="./js/utilitis.js"></script>
+    <script src="./js/addmoney.js"></script>
   </body>
 </html>

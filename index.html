@@ -17,6 +17,7 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="./history.html" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!--custom tailwind-->
     <script>
@@ -37,15 +38,20 @@
       }
     </style>
   </head>
-  <body id="main">
+  <body id="">
     <header class="sticky top-0 z-10 backdrop-blur-lg">
       <nav class="w-full bg-orange-50">
         <div
           class="mx-auto w-full md:w-5/6 p-3 flex justify-between flex-col md:flex-row items-center md:items-start"
         >
           <div class="flex items-center">
-            <a href="faq.html"><button class="text-lg px-4 py-2 rounded-lg bg-lime-300 font-bold">              
-              Blog</button></a>
+            <a href="faq.html"
+              ><button
+                class="text-lg px-4 py-2 rounded-lg bg-lime-300 font-bold"
+              >
+                Blog
+              </button></a
+            >
           </div>
           <div class="flex items-center text-center">
             <img src="assets/logo.png" alt="" />
@@ -62,21 +68,25 @@
       <section>
         <div class="md:container md:mx-auto pt-14 text-center">
           <button
-            class="text-slate-700 px-4 py-2 focus:bg-lime-300 border border-slate-300 rounded-lg font-medium bg-slate-200 hover:bg-slate-300 mr-2"
+            id="donation-btn"
+            class="text-slate-700 px-4 py-2 focus:outline-none transition-colors duration-300 border border-slate-300 rounded-lg font-medium bg-lime-300 mr-2"
           >
             Donation
           </button>
           <a href="./history.html">
             <button
-              class="px-4 py-2 focus:bg-lime-300 border border-slate-300 rounded-lg font-medium text-slate-700 bg-slate-200 hover:bg-slate-300"
-            >
-              History
+              id="history-btn" class="text-slate-700 px-4 py-2
+              focus:outline-none transition-colors duration-300 border
+              border-slate-300 rounded-lg font-medium" > History
             </button>
           </a>
         </div>
       </section>
     </header>
-    <main class="md:container md:mx-auto my-2 md:my-8 w-full md:w-5/6">
+    <main
+      id="main"
+      class="md:container md:mx-auto my-2 md:my-8 w-full md:w-5/6"
+    >
       <!--pop up starts-->
       <div
         id="congrats-modal"

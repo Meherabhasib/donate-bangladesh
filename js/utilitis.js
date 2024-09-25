@@ -10,10 +10,11 @@ function getTextFieldValueById(Id){
     return textnumber;
 }
 
+
 function openModal() {
     const modal = document.getElementById("congrats-modal");
     modal.style.display = 'block';
-    modal.style.display = 'blur'
+    
 }
 
 function closeModal() {
