@@ -8,7 +8,7 @@ document.getElementById('donet-btn-1').addEventListener('click', function(event)
     const totalMoney = getTextFieldValueById('total-amount')
     const totalNewBalance = totalMoney - addMoney;
     const newBalance = addMoney + balance;
-    if ( typeof addMoney !== 'number' || isNaN(addMoney) || addMoney <= 0 ) {
+    if ( typeof addMoney !== 'number' || isNaN(addMoney) || addMoney <= 0 || addMoney > totalNewBalance ) {
        return alert("Warning: Please enter a valid donation amount.");
     } else {
            openModal();
@@ -30,7 +30,7 @@ document.getElementById('donet-btn-2').addEventListener('click', function(event)
     const totalMoney = getTextFieldValueById('total-amount')
     const totalNewBalance = totalMoney - addMoney;
     const newBalance = addMoney + balance;
-    if (typeof addMoney !== 'number' || isNaN(addMoney) || addMoney <= 0 ) {
+    if (typeof addMoney !== 'number' || isNaN(addMoney) || addMoney <= 0 || addMoney > totalNewBalance  ) {
       return  alert("Warning: Please enter a valid donation amount.");
     } else {
            openModal();
@@ -52,7 +52,7 @@ document.getElementById('donet-btn-3').addEventListener('click', function(event)
     const totalMoney = getTextFieldValueById('total-amount')
     const totalNewBalance = totalMoney - addMoney;
     const newBalance = addMoney + balance;
-    if (typeof addMoney !== 'number' || isNaN(addMoney) || addMoney <= 0 ) {
+    if (typeof addMoney !== 'number' || isNaN(addMoney) || addMoney <= 0 || addMoney > totalNewBalance ) {
        return alert("Warning: Please enter a valid donation amount.");
     } else {
            openModal();
